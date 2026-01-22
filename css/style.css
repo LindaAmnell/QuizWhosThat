@@ -47,9 +47,9 @@ main {
 
 h1 {
   font-size: 42px;
+  margin-top: 0.5em;
   font-family: "Rubik Dirt", system-ui;
   font-weight: 400;
-  margin-top: 1.2em;
   color: var(--text-main);
   letter-spacing: 0.04em;
 }
@@ -107,9 +107,6 @@ button:disabled {
   width: 19em;
   margin-top: 1em;
   align-items: end;
-}
-footer {
-  margin-bottom: 2em;
 }
 
 @media (min-width: 900px) {

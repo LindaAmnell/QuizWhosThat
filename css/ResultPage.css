@@ -1,19 +1,15 @@
 .result-page {
   flex-direction: column;
-  gap: 1em;
+  gap: 2em;
   margin-top: 1em;
   place-items: center;
   display: none;
-  min-height: calc(90vh - 120px);
+  min-height: calc(85vh - 120px);
 }
-.result-page h2 {
-  margin-bottom: 0.5em;
-}
+
 .highscore-section {
   border: 1px solid rgba(255, 255, 255, 0.6);
   width: 19em;
-  margin-top: 2em;
-  margin-bottom: 2em;
   border-radius: 8px;
   box-shadow:
     0 10px 26px rgba(0, 0, 0, 0.6),
@@ -78,13 +74,13 @@
 }
 
 @media (max-height: 800px) {
-  .resultbtn-div {
-    flex-direction: row;
-  }
 }
 
 @media (min-width: 900px) {
   .result-page h2 {
     margin-top: 1em;
+  }
+  .resultbtn-div {
+    flex-direction: row;
   }
 }

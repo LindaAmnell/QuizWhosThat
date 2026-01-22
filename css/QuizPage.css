@@ -4,7 +4,7 @@
   gap: 3em;
   display: none;
   place-items: center;
-  min-height: calc(90vh - 120px);
+  min-height: calc(85vh - 120px);
 }
 
 .nameInfo {
