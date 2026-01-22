@@ -1,23 +1,35 @@
-# 🎬 Movie Quiz (Course Assignment – Work in Progress)
+# 🎬 Movie Quiz (Course Assignment – Completed)
 
-This project is a **course assignment** where the goal is to build a **quiz application** using **HTML, CSS and vanilla JavaScript**.
+This project is a **completed course assignment** where the goal was to build a **quiz application** using **HTML, CSS and vanilla JavaScript**.
 
-The application is based on a **movie theme** and will allow users to play one or more quizzes consisting of multiple-choice questions.
+The application is based on a **movie theme** and allows the user to select and play a quiz consisting of multiple-choice questions.
+
+👉 **Test the application here:**  
+https://lindaamnell.github.io/QuizWhosThat/
 
 ---
 
-## 📌 Assignment Goals
+## 📌 Assignment Description
 
-According to the assignment requirements, the application will include:
+The assignment was to create a quiz application with the following requirements:
 
-- A start page where available quizzes are displayed  
+- A start page displaying one or more quizzes  
 - The ability to select and play a quiz  
 - Multiple-choice questions with at least four answer options  
-- Automatic correction and a result shown after completing a quiz  
+- Automatic correction and a result shown after completing the quiz  
 - Quiz data (quizzes, questions, answers) stored in **localStorage** in **JSON format**  
 - A clear and structured data format that allows multiple quizzes to be added  
+- A well-structured and user-friendly design  
+- The application runs without errors  
 
-The focus of the project is to demonstrate understanding of **JavaScript logic**, **data handling**, and **basic UI structure**, without using external frameworks.
+All requirements listed above are fulfilled in this project.
+
+---
+
+## ⭐ Extra Feature (Not a Requirement)
+
+- A **high score list** that saves and displays results using **localStorage**  
+  *(This feature was added as an enhancement and was not part of the assignment requirements.)*
 
 ---
 
@@ -26,10 +38,10 @@ The focus of the project is to demonstrate understanding of **JavaScript logic**
 - **HTML** – structure and layout  
 - **CSS** – styling and visual design  
 - **JavaScript (Vanilla)** – quiz logic and interaction  
-- **localStorage** – storing quiz data in the browser  
+- **localStorage** – storing quiz data (and high scores)
 
 ---
 
-## 🚧 Project Status
+## ✅ Project Status
 
-This project is currently under development as part of a course assignment.
+This project is **finished** and submitted as part of a course assignment.
