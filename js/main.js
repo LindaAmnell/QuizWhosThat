@@ -1,6 +1,6 @@
-import { initStartPage } from "./pages/StartPage.js";
-import { initChoseQuiz } from "./pages/ChoseQuiz.js";
-import { initResultPage } from "./pages/Result.js";
+import { initStartPage } from "./pages/startPage.js";
+import { initChoseQuiz } from "./pages/choseQuiz.js";
+import { initResultPage } from "./pages/result.js";
 
 function initApp() {
   initStartPage();
