@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/startPage.css" />
+    <link rel="stylesheet" href="./css/ChoseQuiz.css" />
+    <link rel="stylesheet" href="./css/QuizPage.css" />
+    <link rel="stylesheet" href="./css/ResultPage.css" />
+
+    <link rel="icon" href="./images/iconpng.png" type="image/png" />
+
+    <script type="module" src="./js/main.js"></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Wallpoet&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+    </style>
+    <title>Who’s That?!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Who’s That?!</h1>
+    </header>
+    <main>
+      <!-- Start page -->
+      <section class="start-page">
+        <div class="start-container">
+          <div class="subtitle">
+            <p>You’ve seen them.</p>
+            <p>Do you know them?</p>
+          </div>
+          <p class="description">
+            Guess the character from images, quotes and clues.
+          </p>
+          <label id="name-lable" for="">Enter your name and let’s begin.</label>
+          <input type="text" id="player-input" placeholder="Your name" />
+          <p class="validation"></p>
+        </div>
+
+        <button id="start-btn" disabled>Start</button>
+      </section>
+
+      <!-- Chose quiz page -->
+      <section class="choseQuiz-page">
+        <p class="quiz-info">Choose a quiz to begin.</p>
+        <div id="quiz">
+          <h2>Quiz</h2>
+        </div>
+      </section>
+
+      <!-- Play quiz page -->
+      <section class="quiz-page">
+        <p class="quiz-name"></p>
+        <p class="quiz-text"></p>
+        <div class="btn-section"></div>
+      </section>
+
+      <!-- Result page -->
+      <section class="result-page">
+        <h2>Scoreboard</h2>
+        <div class="highscore-section">
+          <div class="info-div">
+            <p>Name</p>
+            <p>Score</p>
+            <p>Time</p>
+          </div>
+          <div class="higscore"></div>
+        </div>
+        <div class="resultbtn-div">
+          <button id="goTo-quizPage-btn">Quiz Menu</button>
+          <button id="goTo-startPage-btn">Exit</button>
+          <button id="deleteHighscore">Delet Highscore</button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+    </main>
+    <footer class="footer-info">
+      <div class="backBtn-div">
+        <button id="back-btn">Back</button>
+      </div>
+      <div class="score-div">
+        <p class="nameInfo"></p>
+        <div class="timer">Time: <span id="timer-value">00:00</span></div>
+        <p class="scoreInfo"></p>
+      </div>
+    </footer>
+  </body>
+</html>

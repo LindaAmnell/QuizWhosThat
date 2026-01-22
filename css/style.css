@@ -1,0 +1,142 @@
+:root {
+  --text-main: #e7f6ff;
+  --text-muted: #b9cfe0;
+  --btn-bg: rgba(255, 255, 255, 0.92);
+  --btn-text: #020202;
+  --btn-border: rgba(255, 255, 255, 0.55);
+  --btn-hover-bg: rgba(255, 255, 255, 1);
+  --effect-blue: rgba(107, 168, 255, 0.45);
+  --btn-shadow-strong: 0 8px 20px rgba(0, 0, 0, 0.45);
+  --btn-shadow-glow: 0 0 14px rgba(107, 168, 255, 0.6);
+
+  --input-border: rgba(231, 246, 255, 0.6);
+  --input-focus-border: rgba(231, 246, 255, 0.9);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    #01070f 0%,
+    #031425 25%,
+    #08253e 50%,
+    #031425 75%,
+    #01070f 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--text-main);
+  font-family: "Irish Grover", system-ui;
+  font-weight: 200;
+}
+
+main {
+  min-height: calc(70vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  margin-top: 1.2em;
+  color: var(--text-main);
+  letter-spacing: 0.04em;
+}
+
+button {
+  font-size: 22px;
+  font-family: "Irish Grover", system-ui;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1.5px solid var(--btn-border);
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: var(--btn-shadow-strong);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.12s ease,
+    opacity 0.15s ease;
+}
+
+button:hover {
+  border-color: var(--btn-hover-border);
+  box-shadow: var(--btn-shadow-strong), var(--btn-shadow-glow);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.35);
+  opacity: 0.92;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.backBtn-div {
+  display: none;
+}
+#back-btn {
+  padding: 0 1em;
+  font-weight: 200;
+}
+.show {
+  display: flex;
+}
+
+.score-div {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 19em;
+  margin-top: 1em;
+  align-items: end;
+}
+footer {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 900px) {
+  html {
+    background-color: #01070f;
+  }
+  body {
+    height: 90vh;
+    border-radius: 16px;
+    width: 700px;
+    place-self: center;
+    margin-top: 2em;
+
+    border-radius: 18px;
+    border: 2px solid rgba(231, 246, 255, 0.65);
+
+    box-shadow:
+      0 0 25px rgba(107, 168, 255, 0.35),
+      0 0 60px rgba(107, 168, 255, 0.15),
+      0 20px 45px rgba(0, 0, 0, 0.65);
+  }
+
+  h1 {
+    margin-top: 1em;
+    font-size: 55px;
+  }
+  footer {
+    margin-bottom: 3em;
+  }
+}
