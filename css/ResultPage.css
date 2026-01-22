@@ -77,10 +77,11 @@
 }
 
 @media (min-width: 900px) {
-  .result-page h2 {
-    margin-top: 1em;
-  }
   .resultbtn-div {
     flex-direction: row;
+  }
+  .highscore-section {
+    margin: 0;
+    margin-bottom: 0.5em;
   }
 }
